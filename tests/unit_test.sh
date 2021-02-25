@@ -5,8 +5,7 @@ REGENERATE=0
 ESA_TEST=0
 IMG_TEST=0
 
-PYTHON="/usr/bin/python2.7"
-#PYTHON="/usr/bin/python3.5"
+PYTHON="/usr/bin/python3.7"
 
 while getopts ":crei" opt; do
   case $opt in
