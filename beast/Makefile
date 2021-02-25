@@ -1,5 +1,5 @@
 CC = g++
-PYTHONHEADERS=/usr/include/python3.7
+PYTHONHEADERS=/usr/include/python3.8
 
 all: $(OBJ)
 	swig -python -c++ beast.i
