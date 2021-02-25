@@ -18,4 +18,10 @@ Why can't python find cv2..
 Looks like python-opencv installs cv2 in the system python2
 python3-opencv installs cv2 in the system python3
 Which isn't the same as the python 3 in /usr/local/bin (the on in path)
-The python 
+The python installed by python3-dev is 3.7.3, rather than 3.7.10 included with the base image.. maybe we need ubuntu with python3-dev...
+
+switching to use pip to install opencv instead of python-opencv
+
+Actually we're just going to do this from the beginning, using ubuntu base image, installing python3.8 and pip
+
+TODO: use requirements.txt to install python deps?
