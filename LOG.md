@@ -1,3 +1,7 @@
+# General Log of Updates
+
+## February 24, 2021 - Jackson
+
 Using the python base image becuse I can't seem to install it on ubuntu and add it to path
 
 based on buildpack-deps so should have git and a modern c++ compiler
@@ -43,3 +47,21 @@ Ok.. dot comes from graphviz, nc comes from netcat, and gprof2dot can be install
 Looks like netcat is used to pass images to startracker.py daemon
 
 Seems to hang forever.. not sure what the deal is there..
+
+
+## March 2, 2021 - Wesley
+
+I worked on getting up to speed on the Docker file that Jackson started.
+When I run it I use: 
+`docker run -it -v $(pwd)/:/root/repo startracker`
+that way I can edit the files and have them automatically updated in the docker image. 
+
+All in all, the Dockerfile seems to work ok, although I have the same issue of it hanging on the images. It never seems to finish. 
+
+I started looking through the unit_test.sh and the startracker.py. 
+This seems like a completely convoluted system.
+Why would you setup a server expecting UDP/TCP packets just so that you could send python commands to the python script??
+I think that the next thing I am going to do when I have time is create a new script, or change the old one to just be a command line tool.
+Argparse makes that so easy. 
+
+TODO: Update .gitignore we need to clean this up a little bit. 
