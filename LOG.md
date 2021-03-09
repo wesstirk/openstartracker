@@ -65,3 +65,11 @@ I think that the next thing I am going to do when I have time is create a new sc
 Argparse makes that so easy. 
 
 TODO: Update .gitignore we need to clean this up a little bit. 
+
+## March 9, 2021 - Wesley
+
+I did make a command line interface for the startracker.
+It is called `startracker_cli.py`. 
+I tried to change as little as posisble. 
+
+I ran `python3 startracker_cli.py science_cam_may8_0.05sec_gain40/calibration.txt 1991.25 science_cam_may8_0.05sec_gain40/median_image.png science_cam_may8_0.05sec_gain40/samples/img4.png` in the test directory and it seemed to work ok.
